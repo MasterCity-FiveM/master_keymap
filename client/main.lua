@@ -1,3 +1,12 @@
+ESX = nil
+
+Citizen.CreateThread(function()
+	while ESX == nil do
+		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+		Citizen.Wait(0)
+	end
+end)
+
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
@@ -16,6 +25,33 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 289) then
 			--F2
 			TriggerEvent('master_keymap:f2')
+		elseif IsControlJustReleased(0, 161) then
+			--Number 7
+			TriggerEvent('master_keymap:n7')
+		elseif IsControlJustReleased(0, 165) then
+			--Number 5
+			TriggerEvent('master_keymap:n5')
+		elseif IsControlJustReleased(0, 243) then
+			-- `
+			TriggerEvent('master_keymap:cc')
+		elseif IsControlJustReleased(0, 74) then
+			-- H
+			TriggerEvent('master_keymap:h')
+		elseif IsControlJustReleased(0, 29) then
+			-- B
+			TriggerEvent('master_keymap:b')
+		elseif IsControlJustReleased(0, 303) then
+			-- U
+			TriggerEvent('master_keymap:u')
+		elseif IsControlJustReleased(0, 246) then
+			-- Y
+			TriggerEvent('master_keymap:y')
+		elseif IsControlJustReleased(0, 182) then
+			-- L
+			TriggerEvent('master_keymap:l')
+		elseif IsControlJustReleased(0, 171) then
+			-- CapsLock
+			TriggerEvent('master_keymap:capslock')
 		end
 	end
 end)
