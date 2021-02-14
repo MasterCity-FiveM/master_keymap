@@ -49,6 +49,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 182) then
 			-- L
 			TriggerEvent('master_keymap:l')
+		elseif IsControlJustReleased(0, 178) then
+			-- DELETE
+			TriggerEvent('master_keymap:delete')
 		elseif IsControlJustReleased(0, 171) then
 			-- CapsLock
 			TriggerEvent('master_keymap:capslock')
