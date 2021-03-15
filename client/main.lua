@@ -58,6 +58,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 171) then
 			-- CapsLock
 			TriggerEvent('master_keymap:capslock')
+		elseif IsControlJustReleased(0, 322) then
+			-- ESC
+			TriggerEvent('master_keymap:esc')
 		end
 	end
 end)
