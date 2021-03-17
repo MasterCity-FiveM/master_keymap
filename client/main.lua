@@ -61,6 +61,24 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 322) then
 			-- ESC
 			TriggerEvent('master_keymap:esc')
+		elseif IsControlJustReleased(0, 19) then
+			-- Left Alt
+			TriggerEvent('master_keymap:lalt')
+		elseif IsControlJustReleased(0, 157) then
+			-- n1
+			TriggerEvent('master_keymap:n1')
+		elseif IsControlJustReleased(0, 158) then
+			-- n2
+			TriggerEvent('master_keymap:n2')
+		elseif IsControlJustReleased(0, 160) then
+			-- n3
+			TriggerEvent('master_keymap:n3')
+		elseif IsControlJustReleased(0, 164) then
+			-- n4
+			TriggerEvent('master_keymap:n4')
+		elseif IsControlJustReleased(0, 172) then
+			-- Arrow up
+			TriggerEvent('master_keymap:up')
 		end
 	end
 end)
