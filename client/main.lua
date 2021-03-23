@@ -79,6 +79,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 172) then
 			-- Arrow up
 			TriggerEvent('master_keymap:up')
+		elseif IsControlJustReleased(0, 245) then
+			-- T
+			TriggerEvent('master_keymap:t')
 		end
 	end
 end)
