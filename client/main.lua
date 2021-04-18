@@ -1,4 +1,55 @@
 ESX = nil
+local keys={}
+keys[34]="a"
+keys[29]="b"
+keys[26]="c"
+keys[30]="d"
+keys[46]="e"
+keys[49]="f"
+keys[47]="g"
+keys[74]="h"
+
+
+keys[311]="k"
+keys[7]="l"
+keys[244]="m"
+keys[249]="n"
+
+keys[199]="p"
+keys[44]="q"
+keys[45]="r"
+keys[33]="s"
+keys[245]="t"
+keys[303]="u"
+keys[0]="v"
+keys[32]="w"
+keys[77]="x"
+keys[246]="y"
+keys[20]="z"
+keys[168]="f7"
+keys[288]="f1"
+keys[289]="f2"
+keys[170]="f3"
+keys[166]="f5"
+keys[167]="f6"
+keys[56]="f9"
+keys[57]="f10"
+keys[344]="f11"
+keys[157]="n1"
+keys[158]="n2"
+keys[160]="n3"
+keys[164]="n4"
+keys[165]="n5"
+keys[159]="n6"
+keys[161]="n7"
+keys[162]="n8"
+keys[163]="n9"
+keys[243]="cc"
+keys[178]="delete"
+keys[171]="capslock"
+keys[322]="esc"
+keys[19]="lalt"
+
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -79,6 +130,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 172) then
 			-- Arrow up
 			TriggerEvent('master_keymap:up')
+		elseif IsControlJustReleased(0, 56) then
+			-- F9
+			TriggerEvent('master_keymap:f9')
 		elseif IsControlJustReleased(0, 245) then
 			-- T
 			TriggerEvent('master_keymap:t')
