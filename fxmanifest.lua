@@ -7,7 +7,7 @@ description 'MasterkinG32 Custom codes'
 version '1.0.0'
 
 client_scripts {
-	'client/main.lua'
+	'client/*.lua'
 }
 
 dependency 'es_extended'
