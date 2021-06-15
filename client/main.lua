@@ -73,6 +73,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 167) then
 			--F6
 			TriggerEvent('master_keymap:f6')
+		elseif IsControlJustReleased(0, 288) then
+			--F1
+			TriggerEvent('master_keymap:f1')
 		elseif IsControlJustReleased(0, 57) then
 			--F10
 			TriggerEvent('master_keymap:f10')
