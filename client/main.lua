@@ -139,6 +139,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 245) then
 			-- T
 			TriggerEvent('master_keymap:t')
+		elseif IsControlPressed(0, 21) and IsControlPressed(0, 47) then
+			-- SHIFT + G
+			TriggerEvent('master_keymap:shiftg')
 		end
 	end
 end)
